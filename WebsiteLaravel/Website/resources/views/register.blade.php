@@ -66,6 +66,7 @@
                             <button type="submit" class="bg-blue-500 text-white p-3 rounded-md w-full">Register</button>
                         </div>
                     </form>
+                    <p class=" text-sm">Already have an account? <a href="{{ 'login' }}" class="text-blue-500">Login here.</a></p>
                 </div>
 
 
