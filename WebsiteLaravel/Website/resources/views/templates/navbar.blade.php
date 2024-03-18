@@ -8,37 +8,46 @@
         <!-- jQuery Framework Link-->
 
     </head>
-    <body class="bg-slate-200 dark:bg-slate-800">
+    <body class="bg-slate-200 dark:bg-neutral-800">
         
         <!-- Page layout -->
         <div class="grid grid-cols-4 h-full">
 
             <!-- NavBar -->
-            <div class="col-span-1 bg-slate-500 flex flex-col p-5">
+            <div class="col-span-1 bg-neutral-950 flex flex-col ">
                 
                 <!-- Logo -->
-                <div class='h-[20%] w-full bg-blue-200 py-5'>
+                <div class='h-[20%] w-full bg-neutral-900 flex items-center px-5'>
                     
+                    <!-- Circle -->
+                    <div class='h-[50%] w-[30%] rounded-full bg-blue-600 '>
+
+                    </div>
+                    
+                    <div class='p-5 text-slate-200 text-2xl font-bold text-center'>
+                        Curso de Ciberseguranca
+                    </div>
+
                 </div>
                 <!-- Logo -->
 
                 <!-- Nav Bar Links -->
-                <div class="flex-grow py-5"> 
-                    <ul id='navbar' class="space-y-4 font-bold text-slate-200">
-                        <li class="bg-slate-600 hover:bg-slate-700 rounded p-5">
+                <div class="flex-grow"> 
+                    <ul id='navbar' class=" font-bold text-slate-200">
+                        <li class="text-2xl hover:bg-neutral-900 rounded p-5 text-right">
                             <a href="{{ '/' }}" class="" > Main Page </a>
                         </li>
-                        <li class="bg-slate-600 hover:bg-slate-700 rounded p-5">
+                        <li class="text-2xl hover:bg-neutral-900 rounded p-5 text-right">
                             <a href="{{ 'home' }}" class="" > About the Event </a>
                         </li>
                         @guest
-                        <li class="bg-slate-600 hover:bg-slate-700 rounded p-5">
+                        <li class="text-2xl hover:bg-neutral-900 rounded p-5 text-right">
                             <a href="{{ 'register' }}" class="" > Register for the Event </a>
                         </li>
                         @endguest
 
                         @auth
-                        <li class="bg-slate-600 hover:bg-slate-700 rounded p-5">
+                        <li class="text-2xl hover:bg-neutral-900 rounded p-5 text-right">
                             <a href="{{ 'courses' }}" class="" > Register for the Event </a>
                         </li>
                         @endauth
