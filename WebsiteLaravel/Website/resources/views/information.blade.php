@@ -2,9 +2,10 @@
 
                 <h1 class="text-2xl p-5 "> Projeto de Prova Aptidão Profissional </h1>
 
-                <div class="max-w-5xl mx-auto p-8 bg-slate-600 text-slate-200 mt-10 rounded-md shadow-md">
+                <div class="  p-8 text-slate-200  ">
 
-                    <h1 class="text-3xl font-bold mb-6">Welcome to Our Information Page</h1>
+                    <!-- Animate Later -->
+                    <h1 class="text-3xl text-lime-500 font-bold mb-6">> Welcome to Our Information Page</h1>
             
                     <p class="mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam bibendum, ligula a pellentesque varius, justo turpis eleifend nibh, vel bibendum dui purus quis quam.
