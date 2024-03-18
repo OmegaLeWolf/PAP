@@ -29,7 +29,7 @@
                             <input type="password" id="password" name="password" class="w-full p-2 border border-gray-300 rounded">
                         </div>
             
-                        <div class="mb-4">
+                        <div class="mb-4 text-slate-200">
                             <label for="class" class="block  text-sm font-semibold mb-2">Class</label>
                             <select id="class" name="class" class="w-full p-2 border border-gray-300 rounded">
                                 

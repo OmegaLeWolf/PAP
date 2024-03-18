@@ -9,6 +9,13 @@
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
+        <!-- Username -->
+        <div class="mt-4">
+            <x-input-label for="username" :value="__('Username')" />
+            <x-text-input id="username" class="block mt-1 w-full" type="text" name="username" :value="old('username')" required autofocus autocomplete="username" />
+            <x-input-error :messages="$errors->get('username')" class="mt-2" />
+        </div>
+
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
@@ -37,6 +44,27 @@
                             name="password_confirmation" required autocomplete="new-password" />
 
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        </div>
+
+        <!-- Class -->
+        <div class="mt-4">
+            <x-input-label for="class" :value="__('Class')" />
+            <x-text-input id="class" class="block mt-1 w-full" type="text" name="class" :value="old('class')" required autofocus autocomplete="class" />
+            <x-input-error :messages="$errors->get('class')" class="mt-2" />
+        </div>
+
+        <!-- School Year -->
+        <div class="mt-4">
+            <x-input-label for="TurmaAno" :value="__('TurmaAno')" />
+            <x-text-input id="TurmaAno" class="block mt-1 w-full" type="text" name="TurmaAno" :value="old('TurmaAno')" required autofocus autocomplete="TurmaAno" />
+            <x-input-error :messages="$errors->get('TurmaAno')" class="mt-2" />
+        </div>
+
+        <!-- School -->
+        <div class="mt-4">
+            <x-input-label for="school" :value="__('School')" />
+            <x-text-input id="school" class="block mt-1 w-full" type="text" name="school" :value="old('school')" required autofocus autocomplete="school" />
+            <x-input-error :messages="$errors->get('school')" class="mt-2" />
         </div>
 
         <div class="flex items-center justify-end mt-4">
