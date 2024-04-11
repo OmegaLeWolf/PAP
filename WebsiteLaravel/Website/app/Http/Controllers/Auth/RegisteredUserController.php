@@ -31,11 +31,12 @@ class RegisteredUserController extends Controller
     public function store(Request $request): RedirectResponse
     {
         
+        
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'username' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'password' => ['required', Rules\Password::defaults()],
             'class' => ['required', 'string', 'max:255'],
             'TurmaAno' => ['required', 'string', 'max:255'],
             'school' => ['required', 'string', 'max:255'],
@@ -48,7 +49,7 @@ class RegisteredUserController extends Controller
             'Name' => $request->name,
             'Username' => $request->username,
             'email' => $request->email,
-            'Password' => Hash::make($request->password),
+            'password' => Hash::make($request->password),
             'TurmaAno' => "$request->class$request->TurmaAno",
             'Escola' => $request->school
 

@@ -21,7 +21,7 @@ class User extends Authenticatable
         'Name',
         'Username',
         'email',
-        'Password',
+        'password',
         'TurmaAno',
         'Escola'
     ];
@@ -32,7 +32,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $hidden = [
-        'Password',
+        'password',
         'remember_token',
     ];
 
@@ -43,6 +43,6 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-        'Password' => 'hashed',
+        'password' => 'hashed',
     ];
 }
