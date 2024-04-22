@@ -4,9 +4,15 @@
             
             <div class="col-span-3 text-slate-200">
 
+                <div class='grid grid-cols-2'>
                 <h1 class="text-2xl p-5 "> Projeto de Prova Aptidão Profissional </h1>
+
+                <div class='p-5'>
+                    <a href="{{ route('courses.index') }}" class="bg-neutral-500 text-slate-200 hover:bg-neutral-600 p-5 rounded float-right">Return to Course List</a>
+                </div>
+                </div>
                 
-                <div class="max-w-3xl mx-auto">
+                <div class="max-w-[80%] max-h-[40%] mx-auto">
                     <h1 class="text-2xl font-bold mb-4">Create Course Curriculum</h1>
                     <form action="{{ route('curriculum.store') }}" method="POST" class="space-y-4">
                         @csrf

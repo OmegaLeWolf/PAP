@@ -1,6 +1,14 @@
 @include('templates.navbar') 
-    <h1 class="text-2xl p-5 "> Projeto de Prova Aptidão Profissional </h1>
 
+
+    <div class='grid grid-cols-2'>
+
+        <h1 class="text-2xl p-5 "> Projeto de Prova Aptidão Profissional </h1>
+
+        <div class=''>
+            <a href="{{ route('courses.index') }}" class="bg-neutral-500 text-slate-200 hover:bg-neutral-600 p-5 rounded float-right">Return to Course List</a>
+        </div>
+    </div>
     <div class="  p-8 text-slate-200  ">
 
         <h1 class="text-3xl text-lime-500 font-bold mb-6">> {{ $course->Name }}</h1>
