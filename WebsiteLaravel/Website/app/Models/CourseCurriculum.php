@@ -15,5 +15,5 @@ class CourseCurriculum extends Model
 
     
 
-    protected $fillable = ['Title', 'CourseMaterial', 'CourseAuthor', 'LastUpdated'];
+    protected $fillable = ['CourseID', 'Title', 'CourseMaterial', 'CourseAuthor', 'LastUpdated'];
 }

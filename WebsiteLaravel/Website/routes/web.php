@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\CourseCurriculumController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -22,7 +24,7 @@ Route::get('/', function () {
 })->name('index');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return view('index');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

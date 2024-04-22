@@ -11,7 +11,7 @@
     
     <div class="">
         <p class="mb-4">{!! $curriculum->CourseMaterial !!}</p>
-        <p class="mb-4">Course Author: {{ $curriculum->CourseAuthor }}</p>
+        <p class="mb-4 mt-4">Course Author: {{ $curriculum->CourseAuthor }}</p>
         <p>Last Updated: {{ $curriculum->LastUpdated }}</p>
     </div>
     
