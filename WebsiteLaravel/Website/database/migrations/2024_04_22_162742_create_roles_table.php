@@ -6,24 +6,24 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
+    /**
+     * Run the migrations.
+     */
     public function up()
     {
-        Schema::create('permissions', function (Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
             $table->timestamps();
         });
-
-        // Insert 'admin' role
-        DB::table('permissions')->insert([
-            'name' => 'admin',
-            'created_at' => now(),
-            'updated_at' => now()
-        ]);
     }
 
-    public function down()
+
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
     {
-        Schema::dropIfExists('permissions');
+        Schema::dropIfExists('roles');
     }
 };

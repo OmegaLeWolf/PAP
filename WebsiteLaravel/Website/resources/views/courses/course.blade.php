@@ -1,12 +1,20 @@
 @include('templates.navbar') 
 
-<h1 class="text-2xl p-5">Projeto de Prova Aptidão Profissional</h1>
-<h2 class="text-xl px-5">Curso de Cibersegurança</h2>
+<div class='grid grid-cols-2'>
+    <div>
+        <h1 class="text-2xl p-5">Projeto de Prova Aptidão Profissional</h1>
+        <h2 class="text-xl px-5">Curso de Cibersegurança</h2>
+    </div>
+
+    <div class='p-5'>
+        <a href="{{ route('curriculum.create') }}" class="bg-lime-500 text-slate-200 hover:bg-lime-600 p-5 rounded float-right">Create a course</a>
+    </div>
+</div>
 
 <!-- Course List -->
 <div class="m-5 rounded grid grid-cols-3 gap-5">
     @foreach($courses as $course)
-    <div id='{{ $course->CourseID }}' class="rounded-xl bg-neutral-600 p-5 cursor-pointer course" > 
+    <div id='{{ $course->CourseID }}' class="rounded-xl bg-neutral-600 hover:bg-neutral-700 p-5 cursor-pointer course" > 
         <!-- Course title -->
         <h1 class="text-xl text-lime-500 text-center p-2">> {{$course->Name}}</h1>
         <!-- Course Description -->
