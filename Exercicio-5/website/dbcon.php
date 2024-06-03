@@ -4,7 +4,7 @@ $host = "localhost";
 $username = "";
 $password = "";
 
-$database = "pap_exercicio4";
+$database = "pap_exercicio5";
 
 //Connection to db using data
 $conn = new mysqli($host, $username, $password, $database);
